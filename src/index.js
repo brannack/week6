@@ -36,9 +36,16 @@ var App = React.createClass({
   render: function() {
     return (
       <div>
+        <div className="row">
+
         <h1>Welcome to the KIEI-924 Casino!</h1>
-        <Card  hand={this.state.CurrentHand}/>
+        <Card  thiscard={this.state.CurrentHand[0]}/>
+        <Card  thiscard={this.state.CurrentHand[1]}/>
+        <Card  thiscard={this.state.CurrentHand[2]}/>
+        <Card  thiscard={this.state.CurrentHand[3]}/>
+        <Card  thiscard={this.state.CurrentHand[4]}/>
         <h1><a href="#" className="btn btn-success" onClick={this.clickDeal} >Deal</a></h1>
+        </div>
       </div>
     )
   }
